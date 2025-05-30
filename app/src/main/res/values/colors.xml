@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="netflix_primary">#D00F19</color>
+    <color name="fundo">#141414</color>
+    <color name="preto">#000000</color>
+    <color name="netflix_on_primary">#FFFFFF</color>
+    <color name="branco">#FFFFFF</color>
+    <color name="menu_navegacao">#D8FFFFFF</color>
+</resources>

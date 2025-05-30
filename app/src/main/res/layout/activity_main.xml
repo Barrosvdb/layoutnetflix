@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fundo"
+    android:padding="15dp"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageCapa"
+        android:layout_width="0dp"
+        android:layout_height="320dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/capa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_minhaLista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@android:color/transparent"
+        android:drawableTop="@drawable/ic_adicionar"
+        android:padding="0dp"
+        android:text="@string/minha_lista"
+        android:textColor="@color/branco"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageCapa"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_assistir"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/netflix_primary"
+        android:drawableRight="@drawable/ic_executar1"
+        android:drawablePadding="15dp"
+        android:gravity="center"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:text="@string/assistir"
+
+        android:textColor="@color/branco"
+        android:textSize="15sp"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageCapa"
+        app:layout_constraintEnd_toStartOf="@+id/button_info"
+        app:layout_constraintStart_toEndOf="@+id/button_minhaLista"
+
+        />
+
+    <Button
+        android:id="@+id/button_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@android:color/transparent"
+        android:drawableTop="@drawable/ic_info1"
+        android:padding="0dp"
+        android:text="@string/informacoes"
+        android:textColor="@color/branco"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageCapa"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textLancamentos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/lancamentos"
+        android:textColor="@color/branco"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageCapa" />
+
+
+    <ImageView
+        android:id="@+id/imageFilme1"
+        android:layout_width="96dp"
+        android:layout_height="144dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/filme1"
+        app:layout_constraintEnd_toStartOf="@+id/imageFilme2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textLancamentos" />
+
+
+    <ImageView
+        android:id="@+id/imageFilme2"
+        android:layout_width="96dp"
+        android:layout_height="144dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/filme2"
+        app:layout_constraintEnd_toStartOf="@+id/imageFilme3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageFilme1"
+        app:layout_constraintTop_toBottomOf="@+id/textLancamentos" />
+
+
+    <ImageView
+        android:id="@+id/imageFilme3"
+        android:layout_width="96dp"
+        android:layout_height="144dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/filme3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageFilme2"
+        app:layout_constraintTop_toBottomOf="@+id/textLancamentos" />
+
+
+    <TextView
+        android:id="@+id/textNomeAluno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/meunome"
+        android:textColor="@color/branco"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageFilme1" />
+
+    <ImageView
+        android:id="@+id/imageLogoNetflix"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+
+        android:layout_width="100dp"
+        android:layout_height="250dp"
+
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_info"
+        app:layout_constraintEnd_toEndOf="@+id/imageCapa"
+        app:srcCompat="@drawable/logofilme" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.04136253" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="15dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
