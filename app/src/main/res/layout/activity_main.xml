@@ -15,7 +15,7 @@
         android:layout_width="0dp"
         android:layout_height="320dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/capa"
+        android:src="@drawable/peakblinders"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -49,7 +49,6 @@
         android:paddingLeft="12dp"
         android:paddingRight="12dp"
         android:text="@string/assistir"
-
         android:textColor="@color/branco"
         android:textSize="15sp"
         app:cornerRadius="8dp"
@@ -96,7 +95,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/filme1"
+        android:src="@drawable/mydrugs"
         app:layout_constraintEnd_toStartOf="@+id/imageFilme2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textLancamentos" />
@@ -109,7 +108,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/filme2"
+        android:src="@drawable/umbrella"
         app:layout_constraintEnd_toStartOf="@+id/imageFilme3"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/imageFilme1"
@@ -123,7 +122,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/filme3"
+        android:src="@drawable/xadrez"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/imageFilme2"
@@ -136,7 +135,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
-        android:text="@string/meunome"
+        android:text="@string/nome"
         android:textColor="@color/branco"
         android:textSize="14sp"
         android:textStyle="italic"
@@ -157,13 +156,14 @@
     <ImageView
         android:id="@+id/imageView"
 
-        android:layout_width="100dp"
+        android:layout_width="200dp"
         android:layout_height="250dp"
 
         android:layout_marginEnd="20dp"
         app:layout_constraintBottom_toTopOf="@+id/button_info"
         app:layout_constraintEnd_toEndOf="@+id/imageCapa"
-        app:srcCompat="@drawable/logofilme" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/titulo" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
